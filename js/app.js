@@ -1,3 +1,3 @@
 var app = new AppView({
-  collection: new ImageList()
+  model: new AppModel({images: new ImageList(ImageData)})
 });

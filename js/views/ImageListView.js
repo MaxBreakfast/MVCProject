@@ -1,14 +1,15 @@
 var ImageListView = Backbone.View.extend({
-  tagName:'table',
-  template: _.template('<tr><td><%= name %></td></tr>'),
-  initialize: function(){
-    this.render();
-  },
-  render: function(){
-    this.$el.children().detach();
-    var that= this;
-    this.collection.each(function(image){
-      console.log(image);
-    })
-  }
+    tagName: 'table',
+    
+    initialize: function() {
+        this.render();
+    },
+    render: function() {
+        this.$el.children().detach();
+        this.$el.html('<th>images</th>').append(
+            this.collection.map(function(song) {
+              return new ImageItemView({model: song}).render();
+            })
+        );
+    }
 })
