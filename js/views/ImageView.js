@@ -8,7 +8,7 @@ initialize: function(){
 },
 
   render: function(){
-    console.log(this.collection)
-    return this.$el.html(this.template(this.model.attributes))
+    console.log(this)
+    return this.$el.html(this.template(this.collection.attributes.attributes))
   }
 })
