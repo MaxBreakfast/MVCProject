@@ -1,0 +1,15 @@
+table{
+}
+tr{
+  display: block;
+  border: 1px solid black;
+  padding: 0;
+  width: 300px;
+}
+th{
+  background-color: #BFC6CF;
+  border: 1px solid black;
+}
+td{
+  display: block;
+}

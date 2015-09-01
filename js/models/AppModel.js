@@ -2,6 +2,7 @@ var AppModel = Backbone.Model.extend({
   initialize: function(params){
     this.set('imageList', new ImageList());
     this.set('displayImage', new DisplayImage())
+    this.set('ratingList', new DropDownList())
 
 
     params.images.on('show', function(image){

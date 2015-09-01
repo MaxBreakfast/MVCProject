@@ -1,7 +1,7 @@
 var ImageItemView = Backbone.View.extend({
   tagName: 'tr',
 
-  template: _.template('<tr><td><%= name %></td></tr>'),
+  template: _.template('<td><%= name %></td>'),
 
   events:{
     'click': function(){

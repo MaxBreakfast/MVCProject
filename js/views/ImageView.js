@@ -1,14 +1,13 @@
 var ImageView = Backbone.View.extend({
 
 
-  template: _.template('<tr><td><img src="<%= fileName %>"></td></tr><tr><td><%= rating %></td</tr>'),
+  template: _.template('<td><img src="<%= fileName %>"></td><td><%= name %>: <%= rating %></td>'),
 
 initialize: function(){
   this.collection.on('display', this.render, this);
 },
 
   render: function(){
-    console.log(this)
-    return this.$el.html(this.template(this.collection.attributes.attributes))
+    return this.$el.html(this.template(this.collection.attributes))
   }
 })
