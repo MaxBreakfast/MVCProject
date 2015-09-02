@@ -12,4 +12,4 @@ var ImageListView = Backbone.View.extend({
             })
         );
     }
-})
+});

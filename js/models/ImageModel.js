@@ -6,6 +6,6 @@ var ImageModel = Backbone.Model.extend({
     fileName: ''
   },
   show: function(){
-    this.trigger('show', this)
+    this.trigger('show', this);
   }
-})
+});

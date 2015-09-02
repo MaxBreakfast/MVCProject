@@ -8,6 +8,6 @@ initialize: function(){
 },
 
   render: function(){
-    return this.$el.html(this.template(this.collection.attributes))
+    return this.$el.html(this.template(this.collection.attributes));
   }
-})
+});

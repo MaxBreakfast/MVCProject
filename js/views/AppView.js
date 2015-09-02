@@ -23,4 +23,4 @@ var AppView = Backbone.View.extend({
 
     return this;
   }
-})
+});

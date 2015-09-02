@@ -11,4 +11,4 @@ var RatingData = [{
   }, {
     rating: '5 Out Of 5'
   },
-]
+];

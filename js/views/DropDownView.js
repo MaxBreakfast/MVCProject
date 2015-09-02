@@ -1,17 +1,13 @@
 var DropDownView = Backbone.View.extend({
   tagName: 'select',
-  id: 'ratingSelector',
 
   doSomething: function(){
-    console.log('test')
+    var arg = arguments[0].target;
+    console.log('heard change', arg);
   },
   initialize: function() {
     this.$el.on('change', this.doSomething);
     this.render();
-  },
-
-   events:{
-    'change .ratingSelector': 'doSomething'
   },
 
 
@@ -22,7 +18,7 @@ var DropDownView = Backbone.View.extend({
       this.collection.map(function(rating){
         return new DropDownEntryView({model: rating}).render();
       })
-    )
+    );
   }
 
-})
+});

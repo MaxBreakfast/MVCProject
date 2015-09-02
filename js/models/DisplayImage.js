@@ -7,4 +7,4 @@ var DisplayImage = ImageModel.extend({
        this.trigger('display', this);
     }
 
-})
+});
