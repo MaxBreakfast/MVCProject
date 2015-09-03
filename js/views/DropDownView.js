@@ -2,12 +2,17 @@ var DropDownView = Backbone.View.extend({
   tagName: 'select',
 
   doSomething: function(){
-    var arg = arguments[0].target;
-    console.log('heard change', arg);
+    var ind = this.$el[0].selectedIndex;
+    this.collection.models[ind].update();
+
+    // console.log(this.collection);
   },
   initialize: function() {
-    this.$el.on('change', this.doSomething);
     this.render();
+  },
+
+  events:{
+    'change':'doSomething'
   },
 
 

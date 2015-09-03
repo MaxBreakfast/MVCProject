@@ -1,3 +1,4 @@
 var DropDownList = Backbone.Collection.extend({
-  model: DropDownModel
+  model: DropDownModel,
+  
 });
